@@ -23,7 +23,7 @@ import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 
 import androidx.test.rule.ActivityTestRule;
-import androidx.test.runner.AndroidJUnit4;
+
 
 import com.mindorks.framework.mvvm.R;
 import org.junit.Rule;
@@ -34,7 +34,6 @@ import org.junit.runner.RunWith;
  * Created by amitshekhar on 11/07/17.
  */
 
-@RunWith(AndroidJUnit4.class)
 public class LoginActivityTest {
 
     @Rule

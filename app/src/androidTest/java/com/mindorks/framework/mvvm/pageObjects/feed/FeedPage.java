@@ -1,4 +1,4 @@
-package com.mindorks.framework.mvvm.PageObjects;
+package com.mindorks.framework.mvvm.pageObjects.feed;
 
 
 import static androidx.test.espresso.Espresso.onView;
@@ -12,18 +12,12 @@ import com.mindorks.framework.mvvm.R;
 
 import org.hamcrest.Matcher;
 
-public class FeedPage {
+public final class FeedPage {
 
     public static Matcher<View> toolbar = withId(R.id.toolbar);
     public static Matcher<View> blogTab = withText(R.string.blog);
     public static Matcher<View> opensourceTab = withText(R.string.open_source);
     public static Matcher<View> btnNavigateUp = withContentDescription(R.string.abc_action_bar_up_description);
-
-    public static Matcher<View> rvOpensource = withId(R.id.openSourceRecyclerView);
-    public static Matcher<View> loaderOpensource = withId(R.id.address_looking_up);
-
-    public static Matcher<View> rvBlog = withId(R.id.blogRecyclerView);
-    public static Matcher<View> loaderBlog = withId(R.id.address_looking_up);
 
     public static void navigateUp(){
         onView(btnNavigateUp).perform(click());

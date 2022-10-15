@@ -1,4 +1,4 @@
-package com.mindorks.framework.mvvm.PageObjects;
+package com.mindorks.framework.mvvm.pageObjects;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.*;
@@ -11,7 +11,7 @@ import com.mindorks.framework.mvvm.R;
 
 import org.hamcrest.Matcher;
 
-public class DrawerPage {
+public final class DrawerPage {
 
     public static Matcher<View> ivProfilePic = withId(R.id.iv_profile_pic);
     public static Matcher<View> tvName = withId(R.id.tv_name);

@@ -12,7 +12,7 @@ import androidx.test.espresso.ViewAssertion;
 
 import org.hamcrest.Matcher;
 
-public class FlakyActionExecutor {
+public final class FlakyActionExecutor {
 
 
     public static void actionOnView(Matcher<View> viewMatcher, ViewAction viewAction) throws Throwable {

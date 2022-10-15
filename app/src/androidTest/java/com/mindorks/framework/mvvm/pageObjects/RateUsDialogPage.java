@@ -1,4 +1,4 @@
-package com.mindorks.framework.mvvm.PageObjects;
+package com.mindorks.framework.mvvm.pageObjects;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.*;
@@ -11,7 +11,7 @@ import com.mindorks.framework.mvvm.customActions.SetRating;
 
 import org.hamcrest.Matcher;
 
-public class RateUsDialogPage {
+public final class RateUsDialogPage {
 
     public static Matcher<View> tvRateUsTitle = withId(R.id.tvRateUsTitle);
     public static Matcher<View> ratingBar = withId(R.id.ratingBarFeedback);

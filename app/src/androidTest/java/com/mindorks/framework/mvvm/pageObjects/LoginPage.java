@@ -1,4 +1,4 @@
-package com.mindorks.framework.mvvm.PageObjects;
+package com.mindorks.framework.mvvm.pageObjects;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.matcher.ViewMatchers.*;
@@ -11,7 +11,7 @@ import androidx.test.espresso.Espresso;
 import com.mindorks.framework.mvvm.R;
 import org.hamcrest.Matcher;
 
-public class LoginPage {
+public final class LoginPage {
 
     public static Matcher<View> etEmail = withId(R.id.etEmail);
 
@@ -23,11 +23,10 @@ public class LoginPage {
 
     public static Matcher<View> ibFbLogin = withId(R.id.ibFbLogin);
 
-    public static void login(){
-        onView(etEmail).perform(typeText("sample@sample.com"));
-        onView(etPassword).perform(typeText("sample123"));
+    public static void loginWithTestCredentials(){
+        typeCredentials("sample@sample.com", "sample123");
         Espresso.closeSoftKeyboard();
-        onView(btnServerLogin).perform(click());
+        clickServerLogin();
     }
 
     public static void typeCredentials(String email, String password){
@@ -42,6 +41,10 @@ public class LoginPage {
 
     public static void clickFbLogin(){
         onView(ibFbLogin).perform(click());
+    }
+
+    public static void clickServerLogin(){
+        onView(btnServerLogin).perform(click());
     }
 
 

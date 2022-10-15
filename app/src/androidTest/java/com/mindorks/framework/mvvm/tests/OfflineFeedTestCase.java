@@ -54,6 +54,7 @@ public class OfflineFeedTestCase {
         onView(BlogFeedTabPage.tvMessage).check(matches(isDisplayed()));
         onView(BlogFeedTabPage.btnRetry).check(matches(isDisplayed()));
         // TODO: Turn On Internet here
+        BlogFeedTabPage.clickRetry();
         FlakyActionExecutor.checkOnView(BlogFeedTabPage.rvBlog, matches(hasDescendant(withId(R.id.coverImageView))));
 
     }
@@ -65,6 +66,7 @@ public class OfflineFeedTestCase {
         onView(OpenSourceFeedTabPage.tvMessage).check(matches(isDisplayed()));
         onView(OpenSourceFeedTabPage.btnRetry).check(matches(isDisplayed()));
         // TODO: Turn On Internet here
+        OpenSourceFeedTabPage.clickRetry();
         FlakyActionExecutor.checkOnView(OpenSourceFeedTabPage.rvOpensource, matches(hasDescendant(withId(R.id.coverImageView))));
     }
 

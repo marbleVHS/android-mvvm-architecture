@@ -51,6 +51,7 @@
                 app:cardElevation="22dp">
 
                 <TextView
+                    android:id="@+id/tvTitle"
                     style="@style/TextStyle.Heading"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

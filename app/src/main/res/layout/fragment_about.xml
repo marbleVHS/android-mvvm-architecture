@@ -54,6 +54,7 @@
                 app:srcCompat="@drawable/ic_keyboard_backspace_24px" />
 
             <TextView
+                android:id="@+id/toolbarText"
                 style="@style/TextStyle.Heading"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

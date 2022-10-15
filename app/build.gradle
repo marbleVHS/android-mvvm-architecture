@@ -103,6 +103,7 @@ dependencies {
     // UI Testing
     androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.espressoVersion"
     androidTestImplementation "androidx.test.espresso:espresso-intents:$rootProject.espressoVersion"
+    androidTestImplementation "com.android.support.test.espresso:espresso-contrib:$rootProject.espressoContribVersion"
     androidTestImplementation "androidx.test:runner:$rootProject.testRunnerVersion"
     androidTestImplementation "androidx.test:rules:$rootProject.testRulesVersion"
     androidTestImplementation "androidx.test.ext:junit:$rootProject.testJunitVersion"
